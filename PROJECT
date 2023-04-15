@@ -1,0 +1,20 @@
+domain: myid.dev
+layout:
+- go.kubebuilder.io/v3
+projectName: kubebuilder-test
+repo: github.com/dierbei/kubebuilder-test
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: myid.dev
+  group: mygroup
+  kind: MyResource
+  path: github.com/dierbei/kubebuilder-test/api/v1alpha1
+  version: v1alpha1
+- domain: myid.dev
+  group: mygroup
+  kind: MyResource
+  version: v1beta1
+version: "3"
